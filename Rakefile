@@ -3,7 +3,7 @@ EN = 'semver.en.md'
 KO = 'semver.ko.md'
 
 task default: :build
-task build: [KO, EN]
+task build: [KO, EN, 'README.md']
 file SOURCE
 
 def inject_line_to_file filename, &block
@@ -32,6 +32,11 @@ file EN => SOURCE do |t|
       l.start_with?('>') ? l[2..-1] : false
     end
   end
+end
+
+desc 'intro.md와 ko를 합쳐서 README.md로'
+file 'README.md' => [KO, 'intro.md'] do
+  `cat intro.md #{KO} > README.md`
 end
 
 
