@@ -19,7 +19,7 @@
 >    manner, and
 > 1. PATCH version when you make backwards-compatible bug fixes.
 
-주.부.수 형식에 정식배포전 버전이나 빌드 메타데이타를 위한 라벨을 덧붙이는 방법도 있다.
+주.부.수 형식에 정식배포전 버전이나 빌드 메타데이터를 위한 라벨을 덧붙이는 방법도 있다.
 > Additional labels for pre-release and build metadata are available as extensions
 > to the MAJOR.MINOR.PATCH format.
 
